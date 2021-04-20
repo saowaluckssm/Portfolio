@@ -1,0 +1,142 @@
+@media (max-width: 800px) {
+  .hero {
+    height: 50vh;
+
+    header {
+      .hero-container {
+        h1 {
+          font-size: 2.5rem;
+        }
+
+      }
+    }
+  }
+
+  #aboutme {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+
+    .card-content {
+      padding: 1rem 0;
+      h5 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  #project {
+    margin-bottom: 3rem;
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      .card-body {
+        h5 {
+          font-size: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  #skills {
+    // margin-bottom: 3rem;
+    margin: 0 1rem 2rem;
+    text-align: center;
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .card {
+      img {
+        max-width: 90px;
+      }
+    }
+  }
+
+  #contact {
+    .contact-form {
+      h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 500px) {
+  nav {
+    a {
+      font-size: 0.7rem;
+      letter-spacing: 0;
+    }
+  }
+  .hero {
+    text-align: center;
+    
+    header {
+      .hero-container {
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  #aboutme {
+    margin-bottom: 1rem;
+    padding: 1rem 0;
+    .card-content {
+      h5 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  #project {
+    margin-bottom: 1rem;
+    h1 {
+      font-size: 1rem;
+    }
+  }
+  #skills {
+    .g-5 {
+      --bs-gutter-y: 1.3rem;
+    }
+    margin-bottom: 1rem;
+    h1 {
+      font-size: 1rem;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        max-width: 70px;
+      }
+    }
+  }
+
+  #contact {
+    .contact-form {
+      h1 {
+        font-size: 1rem;
+      }
+    }
+  }
+  footer {
+    padding: 1rem 0;
+    .container {
+      p {
+        font-size: 10px;
+      }
+    }
+  }
+
+
+}

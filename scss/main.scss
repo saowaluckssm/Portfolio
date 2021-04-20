@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import "background";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 50px;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #333;
+  
+
+}
+
+
+
+img {
+  width: 100%;
+}
+
+
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-right: 0.5rem;
+  border-radius: 0;
+  border: none; 
+
+  
+  &:focus {
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
+  &:active {
+    border: none;
+    box-shadow: none;
+    outline: none;
+  }
+  
+}
+
+
+
+.btn-primary {
+  background: linear-gradient(to right,#1687a7, #d3e0ea);
+  color: #fff;
+  position: relative;
+  left: 0;
+  transition: left ease 0.5s;
+  &:hover {
+    left: 10px;
+    
+  }
+  &:active:focus {
+    box-shadow: none;
+  }
+  
+}
+
+
+.btn-secondary {
+  color: #1687a7;
+  border: #1687a7 solid 1px;
+  background-color: #fff;
+  
+  &:hover {
+    background: #1687a7;
+    border: none;
+    
+  }
+  &:active:focus {
+    box-shadow: none;
+  }
+}
+
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+  a {
+    margin: 0 0.7rem;
+    font-size: 0.7rem;
+    &:hover {
+    color: #aaaaaa;
+    }
+  }
+}
+
+// SHOW CASE
+
+nav {
+  background-color: transparent;
+  
+  a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor: pointer;
+    letter-spacing: 1px;
+
+    &:hover {
+      color: #276678;
+    }
+  }
+
+}
+
+
+.hero {
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #fff;  
+  top: 0; 
+  left: 0;
+  width: 100%;
+  
+  
+  header{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      height: 50%;
+      justify-content: center;
+      margin-top: 10rem;
+      
+      h1 {
+        font-size: 4rem;
+        font-weight: 700;
+      }
+      span {
+        background: linear-gradient(to right,#1687a7, #d3e0ea);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+      }
+      
+    }
+
+  }
+
+}
+
+#aboutme {
+  background: linear-gradient(175deg, #f6f5f5 80%, #fff 30%);
+  padding: 6rem 0;
+  margin-bottom: 10rem;
+  .card {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+  }
+
+  .card-img {
+    background-image: url("https://images.unsplash.com/photo-1562016600-ece13e8ba570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=678&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+    img {
+      width: 70%;
+    }
+  }
+
+  .card-content {
+    padding: 3rem 0;
+    h5 {
+      color: #276678;
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      letter-spacing: 1px;
+    }
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+
+
+
+#project {
+  margin-bottom: 10rem;
+  
+  h1 {
+    color: #276678;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .card {
+    border: none;
+    margin-bottom: 5rem;
+    
+    
+
+    .card-body {
+      overflow: hidden;
+      h5 {
+        font-size: 1.7rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+      }
+    }
+
+    img {
+      transition: transform ease 2s;
+      &:hover {
+        transform: rotateY(360deg);
+      }
+    }
+
+  }
+
+  
+}
+
+#skills {
+  
+  text-align: center;
+  padding: 20px 0; 
+  margin-bottom: 7rem;
+  h1 {
+    color: #276678;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5rem;
+  }
+  .card {
+    border: none;
+
+    img {
+      max-width: 120px;
+    }
+  }
+}
+
+#contact {
+  background: #f6f5f5;
+
+  .contact-form {
+    width: 85%;
+    margin: 0 auto;
+    padding: 5%;
+    h1 {
+      color: #276678;
+      text-align: center;
+      font-size: 2rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+      margin-bottom: 3rem;
+    }
+    input:focus, textarea:focus {
+      outline: none;
+      border: none;
+      box-shadow: none;
+
+    }
+  }
+
+
+}
+
+footer {
+  background: #f6f5f5;
+  padding: 2rem 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      
+    }
+  }
+}
+
+.box {
+  opacity: 0;
+  transition: opacity 1.5s ease;
+}
+
+.box.show {
+  opacity: 1;
+}
+
+
+@import "media";
