@@ -257,7 +257,8 @@ nav {
         font-weight: 600;
         margin-bottom: 2rem; }
     #project .card img {
-      transition: transform ease 2s; }
+      transition: transform ease 2s;
+      object-fit: cover; }
       #project .card img:hover {
         transform: rotateY(360deg); }
 

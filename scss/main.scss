@@ -238,6 +238,7 @@ nav {
 
     img {
       transition: transform ease 2s;
+      object-fit: cover;
       &:hover {
         transform: rotateY(360deg);
       }
