@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import "background";
 
 * {
@@ -6,8 +6,7 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  padding-bottom: 50px;
+  font-family: "Montserrat", sans-serif;
   color: #333;
 }
 
@@ -20,16 +19,11 @@ a {
   text-decoration: none;
   text-transform: uppercase;
   color: #333;
-  
-
 }
-
-
 
 img {
   width: 100%;
 }
-
 
 .btn {
   font-size: 1rem;
@@ -37,9 +31,8 @@ img {
   margin-top: 1.5rem;
   margin-right: 0.5rem;
   border-radius: 0;
-  border: none; 
+  border: none;
 
-  
   &:focus {
     box-shadow: none;
     outline: none;
@@ -50,55 +43,47 @@ img {
     box-shadow: none;
     outline: none;
   }
-  
 }
 
-
-
 .btn-primary {
-  background: linear-gradient(to right,#1687a7, #d3e0ea);
+  background: linear-gradient(to right, #1687a7, #d3e0ea);
   color: #fff;
   position: relative;
   left: 0;
   transition: left ease 0.5s;
   &:hover {
     left: 10px;
-    
   }
   &:active:focus {
     box-shadow: none;
   }
-  
 }
-
 
 .btn-secondary {
   color: #1687a7;
   border: #1687a7 solid 1px;
   background-color: #fff;
-  
+
   &:hover {
     background: #1687a7;
     border: none;
-    
   }
   &:active:focus {
     box-shadow: none;
   }
 }
-
 
 .social {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
+
   a {
     margin: 0 0.7rem;
     font-size: 0.7rem;
     &:hover {
-    color: #aaaaaa;
+      color: #aaaaaa;
     }
   }
 }
@@ -107,7 +92,7 @@ img {
 
 nav {
   background-color: transparent;
-  
+
   a {
     text-decoration: none;
     color: #333;
@@ -122,25 +107,22 @@ nav {
       color: #276678;
     }
   }
-
 }
-
 
 .hero {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  background: #fff;  
-  top: 0; 
+  background: #fff;
+  top: 0;
   left: 0;
   width: 100%;
-  
-  
-  header{
+
+  header {
     position: absolute;
-    top:0%;
+    top: 0%;
     left: 0%;
-    width:100%;
+    width: 100%;
     margin: 0;
     padding: 0;
 
@@ -150,22 +132,18 @@ nav {
       height: 60%;
       justify-content: center;
       margin-top: 11rem;
-      
+
       h1 {
         font-size: 4rem;
         font-weight: 700;
       }
       span {
-        background: linear-gradient(to right,#1687a7, #d3e0ea);
+        background: linear-gradient(to right, #1687a7, #d3e0ea);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        
       }
-      
     }
-
   }
-
 }
 
 #aboutme {
@@ -182,7 +160,6 @@ nav {
     background-image: url("https://images.unsplash.com/photo-1562016600-ece13e8ba570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=678&q=80");
     background-repeat: no-repeat;
     background-size: cover;
-    
 
     img {
       width: 70%;
@@ -205,12 +182,9 @@ nav {
   }
 }
 
-
-
-
 #project {
   margin-bottom: 10rem;
-  
+
   h1 {
     color: #276678;
     margin-bottom: 5rem;
@@ -224,8 +198,6 @@ nav {
   .card {
     border: none;
     margin-bottom: 5rem;
-    
-    
 
     .card-body {
       overflow: hidden;
@@ -239,20 +211,13 @@ nav {
     img {
       transition: transform ease 2s;
       object-fit: cover;
-      &:hover {
-        transform: rotateY(360deg);
-      }
     }
-
   }
-
-  
 }
 
 #skills {
-  
   text-align: center;
-  padding: 20px 0; 
+  padding: 20px 0;
   margin-bottom: 7rem;
   h1 {
     color: #276678;
@@ -287,20 +252,18 @@ nav {
       font-weight: 700;
       margin-bottom: 3rem;
     }
-    input:focus, textarea:focus {
+    input:focus,
+    textarea:focus {
       outline: none;
       border: none;
       box-shadow: none;
-
     }
   }
-
-
 }
 
 footer {
   background: #f6f5f5;
-  padding: 2rem 0;
+  padding: 3rem 0;
   .container {
     display: flex;
     flex-direction: column;
@@ -309,7 +272,6 @@ footer {
     p {
       text-transform: uppercase;
       letter-spacing: 2px;
-      
     }
   }
 }
@@ -322,6 +284,5 @@ footer {
 .box.show {
   opacity: 1;
 }
-
 
 @import "media";
